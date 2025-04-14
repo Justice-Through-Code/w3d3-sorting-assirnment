@@ -3,7 +3,7 @@
 #+DATE: 2025-04-13
 #+OPTIONS: toc:nil
 
-* 📚 Assignment Overview
+*  Assignment Overview
 
 In this assignment, you will implement two classic sorting algorithms
 — *Merge Sort* and *Quick Sort* — and use them to sort student
@@ -27,7 +27,7 @@ You must:
    - Name (alphabetically)
    - GPA (descending)
 
-* 📁 Suggested File Structure
+*  Suggested File Structure
 
 #+begin_example
 .
@@ -38,7 +38,7 @@ You must:
 └── student_sort_assignment.org  ← This assignment
 #+end_example
 
-* 🧮 Example Student Data
+*  Example Student Data
 
 #+begin_src python :tangle students.py
 students_tuples = [
@@ -127,6 +127,9 @@ print("Quick sort by name (dicts):", sorted_dicts_by_name)
 - Your `.py` files: `merge_sort.py`, `quick_sort.py`, `students.py`, `sort_demo.py`
 - A short reflection: Which sort is easier to write and why?
 
+* Testing your code
+- In your terminal you should test your code with ~python -m unittest discover -s tests~
+  
 * 💡 Bonus Challenge
 
 Compare runtime for large randomly generated student lists (e.g.,

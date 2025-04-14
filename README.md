@@ -29,7 +29,7 @@ You must:
     -   GPA (descending)
 
 
-# 📁 Suggested File Structure
+# Suggested File Structure
 
     .
     ├── merge_sort.py         ← Your merge sort implementation
@@ -39,7 +39,7 @@ You must:
     └── student_sort_assignment.org  ← This assignment
 
 
-# 🧮 Example Student Data
+# Example Student Data
 
     students_tuples = [
         ("Alice", 3.9),
@@ -126,6 +126,11 @@ You must:
 
 -   Your \`.py\` files: \`merge<sub>sort.py</sub>\`, \`quick<sub>sort.py</sub>\`, \`students.py\`, \`sort<sub>demo.py</sub>\`
 -   A short reflection: Which sort is easier to write and why?
+
+
+# Testing your code
+
+-   In your terminal you should test your code with `python -m unittest discover -s tests`
 
 
 # 💡 Bonus Challenge
