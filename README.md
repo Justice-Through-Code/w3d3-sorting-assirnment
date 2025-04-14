@@ -1,6 +1,6 @@
 
 
-# Assignment Overview
+# 📚 Assignment Overview
 
 In this assignment, you will implement two classic sorting algorithms
 — **Merge Sort** and **Quick Sort** — and use them to sort student
@@ -9,7 +9,7 @@ conditionals, and working with structured data like tuples and
 dictionaries.
 
 
-# Learning Objectives
+# 🎯 Learning Objectives
 
 -   Implement Merge Sort and Quick Sort in Python
 -   Sort a list of student records by name and by GPA
@@ -17,7 +17,7 @@ dictionaries.
 -   Practice working with tuples and dictionaries
 
 
-# Requirements
+# 🔧 Requirements
 
 You must:
 
@@ -29,7 +29,7 @@ You must:
     -   GPA (descending)
 
 
-# Suggested File Structure
+# 📁 Suggested File Structure
 
     .
     ├── merge_sort.py         ← Your merge sort implementation
@@ -39,7 +39,7 @@ You must:
     └── student_sort_assignment.org  ← This assignment
 
 
-# Example Student Data
+# 🧑‍🎓 Example Student Data
 
     students_tuples = [
         ("Alice", 3.9),
@@ -59,37 +59,29 @@ You must:
 # 🚀 Starter Code for Merge Sort
 
     def merge_sort(data, key=lambda x: x):
-        if len(data) <= 1:
-            return data
-        mid = len(data) // 2
-        left = merge_sort(data[:mid], key)
-        right = merge_sort(data[mid:], key)
-        return merge(left, right, key)
-    
-    def merge(left, right, key):
-        result = []
-        i = j = 0
-        while i < len(left) and j < len(right):
-            if key(left[i]) <= key(right[j]):
-                result.append(left[i])
-                i += 1
-            else:
-                result.append(right[j])
-                j += 1
-        result.extend(left[i:])
-        result.extend(right[j:])
-        return result
+        """Sort the data using merge sort.
+        Args:
+            data (list): The list to sort.
+            key (function): A function that returns a value to compare.
+        Returns:
+            list: A sorted list.
+        """
+        # TODO: Implement merge sort
+        pass
 
 
 # 🚀 Starter Code for Quick Sort
 
     def quick_sort(data, key=lambda x: x):
-        if len(data) <= 1:
-            return data
-        pivot = data[0]
-        lesser = [x for x in data[1:] if key(x) <= key(pivot)]
-        greater = [x for x in data[1:] if key(x) > key(pivot)]
-        return quick_sort(lesser, key) + [pivot] + quick_sort(greater, key)
+        """Sort the data using quick sort.
+        Args:
+            data (list): The list to sort.
+            key (function): A function that returns a value to compare.
+        Returns:
+            list: A sorted list.
+        """
+        # TODO: Implement quick sort
+        pass
 
 
 # 🧪 Demonstration Script
@@ -125,16 +117,18 @@ You must:
 # ✅ What to Submit
 
 -   Your \`.py\` files: \`merge<sub>sort.py</sub>\`, \`quick<sub>sort.py</sub>\`, \`students.py\`, \`sort<sub>demo.py</sub>\`
--   A short reflection: Which sort is easier to write and why?
+-   A short reflection: Which sort was easier to write and why?
 
 
-# Testing your code
+# 🧪 Testing Your Code
 
--   In your terminal you should test your code with `python -m unittest discover -s tests`
+-   From your project root directory, run:
+    
+        python -m unittest discover -s tests
 
 
 # 💡 Bonus Challenge
 
 Compare runtime for large randomly generated student lists (e.g.,
-1000+ entries). Use the \`time\` module.
+1000+ entries). Use the \`time\` module and compare Merge Sort and Quick Sort performance.
 

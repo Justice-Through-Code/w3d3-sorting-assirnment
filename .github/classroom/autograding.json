@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "Test Merge Sort Functions",
+      "setup": "",
+      "run": "python -m unittest tests.test_sorting.TestStudentSorting.test_merge_sort_tuples_by_gpa",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "Test Quick Sort Functions",
+      "setup": "",
+      "run": "python -m unittest tests.test_sorting.TestStudentSorting.test_quick_sort_tuples_by_name",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "Test Merge Sort on Dicts",
+      "setup": "",
+      "run": "python -m unittest tests.test_sorting.TestStudentSorting.test_merge_sort_dicts_by_gpa",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "Test Quick Sort on Dicts",
+      "setup": "",
+      "run": "python -m unittest tests.test_sorting.TestStudentSorting.test_quick_sort_dicts_by_name",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "Test Sorting Edge Cases",
+      "setup": "",
+      "run": "python -m unittest tests.test_sorting.TestStudentSorting.test_empty_list",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Test Single Element Edge Case",
+      "setup": "",
+      "run": "python -m unittest tests.test_sorting.TestStudentSorting.test_single_element",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}
